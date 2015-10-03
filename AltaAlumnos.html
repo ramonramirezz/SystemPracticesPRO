@@ -1,0 +1,79 @@
+<html>
+<head>
+<LINK REL=StyleSheet HREF="Style.css" TYPE="text/css" MEDIA=screen>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/utilerias.js"></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    
+<title></title>
+
+
+</head>
+    
+    
+    <body class="cuerpo" style="height:12%">
+  
+    <script>
+    $(document).ready(function() {
+  $("[data-toggle]").click(function() {
+    var toggle_el = $(this).data("toggle");
+    $(toggle_el).toggleClass("open-sidebar");
+  });
+});
+    
+    </script>
+
+   
+    
+ <div class="cabecera">
+   <img id="FondoCab"  style="width:100%; position:absolute; max-height:90">
+
+    <a><img src="imagenes/logo uni.png" id="loguito"></a>
+    <a><label id="TituloSis" >Portal Practicas</label></a>
+    
+<ul id="referencias">
+    <li><a href="">Inicio</a></li>
+    <li><a href="">Salida</a></li>
+    </ul>   
+    
+        </div>
+   
+<div class="container">
+    <div id="sidebar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Potafolio</a></li>
+            <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <a href="#" data-toggle=".container" id="sidebar-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        
+    </div>
+    </div>
+        <div class="Expediente">
+        <ul>
+            <li>Expediente:
+            <input type="number" id="input_expediente">
+            <input type="submit" value="Buscar" id="btn_buscar"></li>
+            <li>Nombre:
+            <input type="text" id="input_nombre" style="margin-left:20;">
+            </li>
+            </ul>
+            
+        </div>
+
+    </body>
+        </html>    
+
+
+
+

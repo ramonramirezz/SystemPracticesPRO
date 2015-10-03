@@ -1,0 +1,154 @@
+.cuerpo{
+margin-left: 0px;
+margin-bottom: 0px;
+margin-right: 0px;
+margin-top: 0px;
+}
+.cabecera{
+
+/*background-image:url("imagenes/nav-img.jpg");*/
+    background-color:darkorange;
+background-size: 100%;
+height: 150%;
+
+}
+
+
+
+#loguito{
+
+position:absolute;
+    width: 6%;
+    max-height: 9%;
+}
+#TituloSis{
+position:absolute;
+left: 15%;
+color:#FACC2E;
+font-size: 80px;
+font-family: cursive;
+    width: auto;
+    top:-2%;
+
+}
+ul li{
+list-style: none;
+display: inline;
+    padding: 10;
+
+}
+#referencias{
+position:absolute;
+    left:80%
+
+}
+.navigation{
+
+overflow: hidden;
+    left:inherit;
+    width:auto;
+    position:relative;
+    background: transparent;
+}
+.navigation li{
+display:block;
+    
+}
+.navigation-toggle{
+position:absolute;
+    
+}
+.container {
+position: relative;
+height: 100%;
+width: 100%;
+left: 0;
+-webkit-transition: left 0.4s ease-in-out;
+-moz-transition: left 0.4s ease-in-out;
+-ms-transition: left 0.4s ease-in-out;
+-o-transition: left 0.4s ease-in-out;
+transition: left 0.4s ease-in-out;
+}
+.container.open-sidebar {
+left: 240px;
+}
+
+#sidebar {
+position: absolute;
+left: -240px;
+background-color: transparent;
+width: 240px;
+height: 100%;
+box-sizing: border-box;
+}
+#sidebar ul {
+  background-color:transparent;
+margin: 0;
+padding: 0;
+list-style: none;
+}
+#sidebar ul li {
+margin: 0;
+    
+}
+#sidebar ul li a {
+padding: 15px 20px;
+font-size: 16px;
+font-weight: 100;
+color:#4B92B4;
+text-decoration: none;
+display: block;
+border-bottom: 1px solid #196c96;
+-webkit-transition: background 0.3s ease-in-out;
+-moz-transition: background 0.3s ease-in-out;
+-ms-transition: background 0.3s ease-in-out;
+-o-transition: background 0.3s ease-in-out;
+transition: background 0.3s ease-in-out;
+}
+#sidebar ul li:hover a {
+    
+background: #196c96;
+}
+.main-content {
+width: 100%;
+height: 100%;
+padding: 10px;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+position: relative;
+}
+.main-content .content{
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+padding-left: 60px;
+width: 100%;
+}
+.main-content .content h1{
+font-weight: 100;
+}
+.main-content .content p{
+width: 100%;
+line-height: 160%;
+}
+.main-content #sidebar-toggle {
+background: #2290c9;
+border-radius: 3px;
+display: block;
+position: relative;
+padding: 10px 7px;
+float: left;
+}
+.main-content #sidebar-toggle .bar{
+display: block;
+width: 18px;
+margin-bottom: 3px;
+height: 2px;
+background-color: #fff;
+border-radius: 1px;
+}
+.main-content #sidebar-toggle .bar:last-child{
+margin-bottom: 0;
+}
+
+
+
