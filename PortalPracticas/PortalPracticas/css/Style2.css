@@ -1,0 +1,104 @@
+﻿.cuerpo{
+margin-left: 0px;
+margin-bottom: 0px;
+margin-right: 0px;
+margin-top: 0px;
+}
+.cabecera{
+background-color:#3059AC;
+background-size: 100%;
+height:100%;
+}
+.Panel2 {
+position:fixed;
+
+}
+.formulario {
+margin-top:5%;
+border-style: ridge;
+border-color: inherit;
+border-width: medium;
+margin-left:30%;
+width:46%;
+height:auto;
+}
+.formulario label{
+    
+    padding:1em;
+    }
+.formulario #txCreditos,#txNombre  {
+    margin-left:4.5%;
+
+}
+.formulario #txExpediente{
+    margin-left:1%;
+    }
+.formulario #txCarrera{
+    margin-left:6%;
+    }
+#loguito{
+
+position:absolute;
+    width: 6%;
+    max-height: 9%;
+}
+#TituloSis{
+position:relative;
+left: 15%;
+color:#FACC2E;
+font-size: 80px;
+font-family: cursive;
+width: auto;
+    
+
+}
+.cabecera ul li{
+list-style: none;
+display: inline;
+padding-left:1%;
+
+}
+#referencias a{
+position:relative;
+margin-left:1em;
+color:white;
+   
+}
+.cbp-spmenu {
+background: #47a3da;
+position:fixed;
+}
+.cbp-spmenu h3 {
+color: #afdefa;
+font-size: 1.9em;
+padding: 20px;
+margin: 0;
+font-weight: 300;
+background: #0d77b6;
+}
+.cbp-spmenu a {
+display: block;
+color: #fff;
+font-size: 1.1em;
+font-weight: 300;
+}
+.cbp-spmenu a:hover {
+background: #258ecd;
+}
+.cbp-spmenu a:active {
+background: #afdefa;
+color: #47a3da;
+}
+.cbp-spmenu-left {
+    height:80%;
+}
+.cbp-spmenu-left a {
+
+    padding:1em;
+      
+}
+#btnAlta {
+    margin-left:25%;
+    width:20%;
+  
+}

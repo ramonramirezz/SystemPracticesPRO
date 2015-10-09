@@ -1,0 +1,6 @@
+c:\users\usuario\documents\visual studio 2013\Projects\PortalPracticas\PortalPracticas\bin\PortalPracticas.dll.config
+c:\users\usuario\documents\visual studio 2013\Projects\PortalPracticas\PortalPracticas\bin\PortalPracticas.dll
+c:\users\usuario\documents\visual studio 2013\Projects\PortalPracticas\PortalPracticas\bin\PortalPracticas.pdb
+c:\users\usuario\documents\visual studio 2013\Projects\PortalPracticas\PortalPracticas\obj\Debug\PortalPracticas.csprojResolveAssemblyReference.cache
+c:\users\usuario\documents\visual studio 2013\Projects\PortalPracticas\PortalPracticas\obj\Debug\PortalPracticas.dll
+c:\users\usuario\documents\visual studio 2013\Projects\PortalPracticas\PortalPracticas\obj\Debug\PortalPracticas.pdb
