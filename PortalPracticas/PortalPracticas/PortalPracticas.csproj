@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AltaAlumnos.aspx" />
+    <Content Include="AltaArchivo.aspx" />
     <Content Include="css\Style.css" />
     <Content Include="css\Style2.css" />
     <Content Include="imagenes\fondoprueba.jpg" />
@@ -82,6 +83,13 @@
     </Compile>
     <Compile Include="AltaAlumnos.aspx.designer.cs">
       <DependentUpon>AltaAlumnos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AltaArchivo.aspx.cs">
+      <DependentUpon>AltaArchivo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AltaArchivo.aspx.designer.cs">
+      <DependentUpon>AltaArchivo.aspx</DependentUpon>
     </Compile>
     <Compile Include="BaseDatos.cs" />
     <Compile Include="Menu.cs" />

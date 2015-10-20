@@ -18,8 +18,8 @@
 <body>
   
     <form id="form1" runat="server">       
-     <asp:ScriptManager ID="ScriptManager1" runat="server">
-                 </asp:ScriptManager>
+<%--     <asp:ScriptManager ID="ScriptManager1" runat="server">
+                 </asp:ScriptManager>--%>
         <div>
     <div class="nav-bar">
              <asp:Panel ID="Nav" runat="server" Width="100%">
