@@ -11,6 +11,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     <title></title>
+
 </head>
 <body>
     <form id="form1" runat="server" class="form-horizontal" enctype="multipart/form-data" method="post">
@@ -41,12 +42,9 @@
                           <asp:Label ID="Label3" runat="server" CssClass="control-label col-md-4" Text="Archivo"></asp:Label>
 
                           <div class="col-md-4">
-                          <%--<asp:TextBox ID="File" CssClass="form-control" Type="file" runat="server" placeholder="Archivo"></asp:TextBox>--%> 
+            
+                               <asp:FileUpload ID="FileUp" runat="server" CssClass="btn"/>  
                                
-                               <asp:FileUpload ID="FileUp" runat="server" CssClass="form-control" />   <br />
-
-                          <%--<asp:Button ID="btExaminar" class="btn btn-primary" runat="server" Text="Examinar" OnClick="btExaminar_Click" />--%>
-
                           </div>
 
                         
@@ -59,11 +57,9 @@
                      
                      </div>
 
-                </div>
 
           </div>
            
-             
     </div>
     </form>
 </body>

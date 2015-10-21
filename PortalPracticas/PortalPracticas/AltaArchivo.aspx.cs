@@ -37,7 +37,8 @@ namespace PortalPracticas
           {
                if (FileUp.PostedFile.FileName == "" )
                {
-                    //Ni Seleccionaste ningun archivo
+                    //No Seleccionaste ningun archivo
+                    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "tmp", "alert('No se a seleccionado ningun archivo')", true);
                }
                else
                {
@@ -55,6 +56,7 @@ namespace PortalPracticas
 
                          default:
                               //mensaje  de extencion no valido
+                         ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "tmp", "alert('Archivo no valido, solo se permiten PDF y DOCX')", true);
                          return;
                     }
 
@@ -64,10 +66,12 @@ namespace PortalPracticas
                          FileUp.PostedFile.SaveAs(carpeta_final);
 
                          //Mensaje de extito
+                         ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "tmp", "alert('Se subio con exito su archivo')", true);
 
                     }
                     catch(Exception ex){
                         //mensaje de error
+                         ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Error al subir')", true);
                     }
                }
           }
