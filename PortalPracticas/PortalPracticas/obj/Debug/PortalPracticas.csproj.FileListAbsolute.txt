@@ -10,3 +10,9 @@ C:\Users\Csi-Pro\Documents\GitHub\SystemPracticesPRO\PortalPracticas\PortalPract
 C:\Users\Csi-Pro\Documents\GitHub\SystemPracticesPRO\PortalPracticas\PortalPracticas\obj\Debug\PortalPracticas.dll
 C:\Users\Csi-Pro\Documents\GitHub\SystemPracticesPRO\PortalPracticas\PortalPracticas\obj\Debug\PortalPracticas.pdb
 C:\Users\Csi-Pro\Documents\GitHub\SystemPracticesPRO\PortalPracticas\PortalPracticas\obj\Debug\PortalPracticas.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Documents\GitHub\SystemPracticesPRO\PortalPracticas\PortalPracticas\bin\PortalPracticas.dll.config
+C:\Users\Usuario\Documents\GitHub\SystemPracticesPRO\PortalPracticas\PortalPracticas\bin\PortalPracticas.dll
+C:\Users\Usuario\Documents\GitHub\SystemPracticesPRO\PortalPracticas\PortalPracticas\bin\PortalPracticas.pdb
+C:\Users\Usuario\Documents\GitHub\SystemPracticesPRO\PortalPracticas\PortalPracticas\obj\Debug\PortalPracticas.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Documents\GitHub\SystemPracticesPRO\PortalPracticas\PortalPracticas\obj\Debug\PortalPracticas.dll
+C:\Users\Usuario\Documents\GitHub\SystemPracticesPRO\PortalPracticas\PortalPracticas\obj\Debug\PortalPracticas.pdb
