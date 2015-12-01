@@ -51,6 +51,7 @@ namespace PortalPracticas
                               //validos
                          case ".pdf":
                          case ".docx":
+                         case ".doc":
                          break;
 
                               //No validos
