@@ -15,20 +15,21 @@ namespace PortalPracticas
      public partial class AltaArchivo : System.Web.UI.Page
      {
           string carpeta;
-
+          BaseDatos bd = new BaseDatos();
           protected void Page_Load(object sender, EventArgs e)
           {
                Menu nav_bar = new Menu(Nav);
                this.llenarCombo();
 
-               carpeta = Path.Combine(Request.PhysicalApplicationPath,"Reportes");
+              // carpeta = Path.Combine(Request.PhysicalApplicationPath,"Reportes");
                
           }
 
           public void llenarCombo() { 
                ArrayList lista = new ArrayList();
-               lista.Add("Carta");
-               lista.Add("Reporte");
+               lista.Add("FPP-01");
+               lista.Add("FPP-02");
+               lista.Add("FPP-03");
                cbTipo.DataSource = lista;
                DataBind();
           }
@@ -61,17 +62,35 @@ namespace PortalPracticas
                     }
 
                     try {
-                         string archivo = Path.GetFileName(FileUp.PostedFile.FileName);
-                         string carpeta_final = Path.Combine(carpeta, archivo);
-                         FileUp.PostedFile.SaveAs(carpeta_final);
+                         //string archivo = Path.GetFileName(FileUp.PostedFile.FileName);
+                         //string carpeta_final = Path.Combine(carpeta, archivo);
+                         //FileUp.PostedFile.SaveAs(carpeta_final);
 
-                         //Mensaje de extito
-                         ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "tmp", "alert('Se subio con exito su archivo')", true);
+
+                         string ruta = Server.MapPath("~/Reportes/") + FileUp.FileName;
+
+                        bool status = bd.AddFile(ruta, 212208557, cbTipo.SelectedItem.ToString());
+
+                         if(status){
+                              FileUp.PostedFile.SaveAs(ruta);
+                              //Mensaje de extito
+                              ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "tmp", "alert('Se subio con exito su archivo')", true);
+                         }
+                         else
+                         {
+                              ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Error al subir')", true);
+                         }
+
+                         
+
+
+
+                         
 
                     }
                     catch(Exception ex){
                         //mensaje de error
-                         ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Error al subir')", true);
+                         ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Error al subir' "+ex.ToString()+")", true);
                     }
                }
           }

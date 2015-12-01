@@ -18,7 +18,7 @@ namespace PortalPracticas
 {
     public class BaseDatos
     {
-        static string strCon = "Data Source=.\\SQLExpress;Integrated Security=true;Initial Catalog=estudiantes";
+        static string strCon = "SERVER=148.225.68.142;DATABASE=PracticasPro;User ID=industrial\\\\richi_web;Password=RicardoRojas18;Trusted_Connection=False;";
         SqlConnection con = new SqlConnection(strCon);
         SqlCommand cmd;
         SqlDataReader dr;
@@ -70,6 +70,21 @@ namespace PortalPracticas
                 status = true;
             }
             return status;
+        }
+
+        public bool AddFile(string url, long expediente, string tipo) {
+             bool status = false;
+             using (cmd = new SqlCommand("Insert into archivos_alumnos(Expediente, Tipo, Url) values(@expediente,@tipo,@url)",con)){
+                  cmd.Parameters.AddWithValue("@expediente", expediente);
+                  cmd.Parameters.AddWithValue("@tipo", tipo);
+                  cmd.Parameters.AddWithValue("@url", url);
+                  cmd.Connection = con;
+                  con.Open();
+                  cmd.ExecuteNonQuery();
+                  con.Close();
+                  status = true;
+             }
+             return status;
         }
 
     }
